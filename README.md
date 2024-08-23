@@ -2,7 +2,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
@@ -76,4 +76,20 @@ To learn more about React Native, take a look at the following resources:
 - [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- # [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+custom important points:-
+configure
+font-family,
+react-native-vector-icons,
+absolute paths(tsconfig,babel-config),
+npm start -- --reset-cache
+
+packages which basic need of an app:-
+react-native-reanimated lottie-react-native @react-navigation/native @react-navigati
+on/native-stack react-native-gesture-handler react-native-pager-view react-native-responsive-fontsize react-native-safe-are
+a-context react-native-screens react-native-linear-gradient
+
+make some changes in metro-config for svg's
+below link to copy code and paste
+https://github.com/software-mansion/react-native-svg/blob/main/USAGE.md
