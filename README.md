@@ -93,3 +93,16 @@ a-context react-native-screens react-native-linear-gradient
 make some changes in metro-config for svg's
 below link to copy code and paste
 https://github.com/software-mansion/react-native-svg/blob/main/USAGE.md
+
+- # permissions
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Your location is ussed to show the delivery progress on the map</string>
+  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>Your location is ussed to show the delivery progress on the map</string>
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>Your location is ussed to show the delivery progress on the map</string>
+
+clean/delete ios build
+rm -rf ios/build/
+
+xcodebuild clean
