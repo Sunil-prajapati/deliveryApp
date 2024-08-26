@@ -13,7 +13,7 @@ const CustomInput: FC<InputProps & React.ComponentProps<typeof TextInput>> = ({
     onClear,
     left,
     right = true,
-    maxLength = 10,
+    maxLength,
     ...props
 }) => {
     return (

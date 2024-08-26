@@ -12,6 +12,7 @@ import useKeyboardOffsetHeight from '@utils/useKeyboardOffsetHeight';
 // import { SafeAreaView } from 'react-native-safe-area-context';
 // import { RFValue } from 'react-native-responsive-fontsize';
 import LinearGradient from 'react-native-linear-gradient'
+import { customerLogin } from '@service/authService';
 
 const bottomColors = [...lightColors].reverse()
 const CustomerLogin: FC = () => {
@@ -58,10 +59,10 @@ const CustomerLogin: FC = () => {
 	}
 
 	const handleAuth = async () => {
-
 		Keyboard.dismiss()
 		setLoading(true)
 		try {
+			await customerLogin(phoneNumber)
 			resetAndNavigate('ProductDashboard')
 		} catch (error) {
 			Alert.alert('Login failed')
@@ -70,8 +71,7 @@ const CustomerLogin: FC = () => {
 			setLoading(false)
 		}
 		// await Auth.signInWithPhoneNumber(phoneNumber)
-		setLoading(false)
-		resetAndNavigate('DeliveryLogin')
+		// resetAndNavigate('DeliveryLogin')
 	}
 	return (
 		<GestureHandlerRootView style={styles.container}>

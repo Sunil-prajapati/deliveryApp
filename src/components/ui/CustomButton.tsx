@@ -1,5 +1,5 @@
-import { ActivityIndicator, StyleSheet, TouchableOpacity } from 'react-native'
-import React from 'react'
+import { ActivityIndicator, StyleSheet, TouchableOpacity, } from 'react-native'
+import React, { FC } from 'react'
 import { Colors, Fonts } from '@utils/Constants';
 import CustomText from './CustomText';
 
@@ -22,13 +22,12 @@ const CustomButton: FC<ButtonProps> = ({ onPress, title, disabled, loading }) =>
                 : <CustomText
                     variant='h6'
                     style={styles.text}
+                    textColor={styles.text.color}
                     fontFamily={Fonts.SemiBold}
                 >
                     {title}
                 </CustomText>
             }
-
-
         </TouchableOpacity>
     )
 }
