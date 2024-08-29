@@ -8,6 +8,8 @@ import CustomerLogin from '@features/auth/CustomerLogin';
 import ProductDashboard from '@features/dashboard/ProductDashboard';
 import DeliveryDashboard from '@features/delivery/DeliveryDashboard';
 import ProductCategories from '@features/category/ProductCategories';
+import ProductOrder from '@features/order/ProductOrder';
+import OrderSuccess from '@features/order/OrderSuccess';
 
 const Stack = createStackNavigator();
 
@@ -31,8 +33,10 @@ const Navigation: FC = () => {
           component={CustomerLogin}
         />
         <Stack.Screen name="ProductDashboard" component={ProductDashboard} />
+        <Stack.Screen name="ProductOrder" component={ProductOrder} />
         <Stack.Screen name="ProductCategories" component={ProductCategories} />
         <Stack.Screen name="DeliveryDashboard" component={DeliveryDashboard} />
+        <Stack.Screen name="OrderSuccess" component={OrderSuccess} />
       </Stack.Navigator>
     </NavigationContainer>
   );
