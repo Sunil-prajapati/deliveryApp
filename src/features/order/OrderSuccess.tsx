@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React, {FC, useEffect} from 'react';
 import {screenWidth} from '@utils/Scaling';
 import {Colors, Fonts} from '@utils/Constants';
@@ -9,12 +9,12 @@ import {replace} from '@utils/NavigationUtils';
 
 const OrderSuccess: FC = () => {
   const {user} = useAuthStore();
-  //   useEffect(() => {
-  //     const timeoutId = setTimeout(() => {
-  //       replace('LiveTracking');
-  //     }, 2300);
-  //     return () => clearTimeout(timeoutId);
-  //   }, []);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      replace('LiveTracking');
+    }, 2300);
+    return () => clearTimeout(timeoutId);
+  }, []);
   return (
     <View style={styles.container}>
       <LottieView
@@ -23,6 +23,7 @@ const OrderSuccess: FC = () => {
         duration={2000}
         loop={false}
         speed={1}
+        style={styles.lottiewView}
         enableMergePathsAndroidForKitKatAndAbove
         hardwareAccelerationAndroid
       />

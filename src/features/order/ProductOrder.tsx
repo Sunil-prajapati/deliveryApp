@@ -48,7 +48,7 @@ const ProductOrder: FC = () => {
       clearCart();
       navigate('OrderSuccess', {...data});
     } else {
-      Alert.alert('There was anf error to place order');
+      Alert.alert('There was any error to place order');
       setLoading(false);
       return;
     }
