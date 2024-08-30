@@ -1,11 +1,11 @@
-import 'react-native-gesture-handler'
-import React from 'react'
-import Navigation from '@navigation/Navigation'
-
-const App = () => {
-  return (
-    <Navigation />
-  )
+import 'react-native-gesture-handler';
+import React from 'react';
+import Navigation from '@navigation/Navigation';
+if (__DEV__) {
+  require('./ReactotronConfig');
 }
+const App = () => {
+  return <Navigation />;
+};
 
-export default App
+export default App;
